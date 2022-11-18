@@ -644,7 +644,7 @@ h1.main, p.demos {
                 for (var i = 0; i < amount; i++) {
                     var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
                     var dir = pos.clone().length(settings.particles.velocity);
-                    particles.add(canvas.width / 2 + pos.x, canvas.height / 2 - pos.y, dir.x, -dir.y);
+                    particles.add(canvas.width / 2 + pos.x, canvas.height / 3 - pos.y, dir.x, -dir.y);
                 }
                 //Update and add particles
                 particles.update(deltaTime);
